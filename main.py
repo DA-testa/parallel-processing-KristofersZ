@@ -6,7 +6,7 @@ def parallel_processing(n, m, data):
     for i in range(m):
         t = data[i]
         threads.sort()
-        time, thread = threads[1]
+        time, thread = threads[0]
         output.append((thread, time))
         threads[thread] = (thread, time + t)
         
